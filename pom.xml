@@ -59,8 +59,8 @@
         </repository>
         <repository>
             <id>netbeans</id>
-            <name>Repository hosting NetBeans modules</name>
-            <url>http://bits.netbeans.org/nexus/content/groups/netbeans</url>
+            <name>NetBeans</name>
+            <url>https://netbeans.apidesign.org/maven2/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -99,6 +99,11 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util-ui</artifactId>
+            <version>${netbeans.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-modules-options-api</artifactId>
             <version>${netbeans.version}</version>
         </dependency>
@@ -120,12 +125,12 @@
     </dependencies>
 
     <properties>
-        <netbeans.version>RELEASE80</netbeans.version>
+        <netbeans.version>RELEASE82</netbeans.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <description> A NetBeans Look And Feel plugin using Darcula of IntelliJ IDEA.
 
-Wraps &lt;a href="https://github.com/bulenkov/Darcula"&gt;Darcula LAF&lt;/a&gt; and provides required NetBeans specific customizations. &lt;b&gt;Many thanks to Konstantin Bulenkov for open sourcing original Darcula LAF.&lt;/b&gt;
+        Wraps &lt;a href="https://github.com/bulenkov/Darcula"&gt;Darcula LAF&lt;/a&gt; and provides required NetBeans specific customizations. &lt;b&gt;Many thanks to Konstantin Bulenkov for open sourcing original Darcula LAF.&lt;/b&gt;
 
 &lt;h2&gt;Change Log&lt;/h2&gt;
 

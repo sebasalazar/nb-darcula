@@ -86,15 +86,14 @@ public class ContentAreaAwareButtonUI extends BasicButtonUI {
         if (model.isEnabled()) {
             SwingUtilities2.drawStringUnderlineCharAt(c, g, text, mnemonicIndex, textRect.x
                     + getTextShiftOffset(), textRect.y + metrics
-                    .getAscent() + getTextShiftOffset());
+                            .getAscent() + getTextShiftOffset());
         } else {
             g.setColor(UIManager.getColor("Button.disabledText"));
             SwingUtilities2.drawStringUnderlineCharAt(c, g, text, -1, textRect.x
                     + getTextShiftOffset(), textRect.y + metrics
-                    .getAscent() + getTextShiftOffset());
+                            .getAscent() + getTextShiftOffset());
         }
     }
-    
 
     protected Paint getBackgroundPaint(JComponent c) {
         JButton b = (JButton) c;
